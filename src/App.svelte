@@ -1,5 +1,5 @@
 <script>
-let inputString = "Type something here...";
+let inputString = "";
 let resultString = "";
 let copyButtonText = "Copy to Clipboard";
 $: resultString = transform(inputString);
@@ -57,21 +57,24 @@ async function handleCopy() {
       <fieldset>
         <div class="form-group">
           <textarea
+            placeholder="Please input your text here..."
             bind:value={inputString}
             id="textarea"
             cols="30"
             rows="5"
-            name="=&quot;textarea&quot;"></textarea
+            name="input textarea"></textarea
           >
         </div>
         <hr>
+        <label for="textarea">Result:</label>
         <div class="form-group">
           <textarea
+            placeholder="Result will display here"
             bind:value={resultString}
             id="textarea"
             cols="30"
             rows="5"
-            name="=&quot;textarea&quot;"></textarea
+            name="result textarea"></textarea
           >
         </div>
         <div class="form-group">
