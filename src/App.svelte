@@ -61,7 +61,7 @@ async function handleCopy() {
             bind:value={inputString}
             id="textarea"
             cols="30"
-            rows="5"
+            rows="6"
             name="input textarea"></textarea
           >
         </div>
@@ -73,7 +73,7 @@ async function handleCopy() {
             bind:value={resultString}
             id="textarea"
             cols="30"
-            rows="5"
+            rows="4"
             name="result textarea"></textarea
           >
         </div>
